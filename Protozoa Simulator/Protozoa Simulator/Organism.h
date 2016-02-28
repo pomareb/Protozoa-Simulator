@@ -1,7 +1,9 @@
 #pragma once
 #include <vector>
 #include <string>
+
 #include "environment.h"
+
 class Organism
 {
 	std::map <std::string, elems> constitution;

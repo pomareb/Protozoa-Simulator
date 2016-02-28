@@ -1,0 +1,87 @@
+<locomotionType>
+	<pseudopods>
+		<nbr 4> // ou <nbr 0-4> ou <nbr 2-4>, si les pseudopodes sont fixes ou crées pour l'occasion
+		<length 5>
+		<width 2>
+		<flexibility >
+		<thoughness >
+	<cilla>
+		<isfixed>
+			<nbr_per_slot 6>
+			<length 1>
+			<bindTo digestiveType::digestive_system::entry_point>
+	<flagella>
+		<nbr 4>
+		<is relative>
+			<length 15>
+			<width	4>
+	<vacuole>
+		<diameter 1>
+		<nbr 2>
+		<expultion_capacity_per_turn_per_body_cell 0.1>
+	<membrane>
+		<length 15>
+		<width	4>
+	<orientationType>
+		<star>
+</>
+<shapeType>
+	<round	>
+	<potatoid	>
+	<elipse	>
+		<pole>
+	<symetry	>
+	<basicSize 400> // nombre de cases occupées
+	<maximalSize 1100>  // nombre de cases maximales occupés avant division
+</>
+<rigidity>
+	<body>
+		<thoughness	>
+		<flexibility	>
+</>
+<digestiveType>
+	<phagocyt>
+		<maximum_eatable_size 14>
+		<total_max_eatable 40>
+	<pinocyt	>
+		<maximum_eatable_size 2>
+		<total_max_eatable 40>
+	<digestive_system	>
+		<entry_point	>
+		<end_point	>
+</>
+<reproduction>
+	<binaryFission	shapeType::maximalSize>
+		<type 14> // duplication + duplication + brassage + .....
+	<bourgeonnement >
+		<childSize	shapeType::basicSize>
+</>
+<needs>
+	<osmotic_pressure 2>
+	<ph 6.4-8.1> // <ph 7>, <ph_variability 0.8>
+	<water>
+	<pression>
+	<carbon>
+	<hydrogen>
+	<oxygen>
+	<nitrogen>
+	<sulfur>
+	<phosphor>
+	<potassium>
+	<calcium>
+	<magnesium>
+	<iron>
+</>
+<markers>
+	<A	40>
+	<B	40>
+	<C>
+	<D>
+	<E>
+</>
+<recievers>
+	<A 2> // même unit que la concentratrion des struct elems
+</>
+
+<intelligence>
+</>
