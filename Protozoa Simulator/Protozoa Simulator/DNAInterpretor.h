@@ -6,6 +6,12 @@ enum digestionType { phagocytose, pinocytose };
 
 class DNAInterpretor
 {
+	void mPoint();
+	void mInsertion();
+	void mDeletion();
+	void mAmplification();
+	void mLargeDeletion();
+
 public:
 	void mutations();
 	void DNARead();
